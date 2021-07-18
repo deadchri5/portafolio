@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./res/styles/normalize.css">
+    <link rel="stylesheet" href="./res/styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Portfolio | Christian Ochoa</title>
+</head>
+
+<body>
+
+    <!--Start: Navigation bar-->
+
+    <nav id="navbar" class="nav-after-scroll">
+        <section class="navbar__logo">
+            <span class="navbar__logo__name">
+                Christian Ochoa
+            </span>
+        </section>
+        <section class="navbar__contents">
+            <ul class="navbar__contents__ul">
+                <li class="navbar__contents__li">
+                    <a href="#main-info" class="goto-contact" onclick="gotoContactSection(event)">
+                        Contact
+                    </a>
+                </li>
+                <li class="navbar__contents__li">
+                    <a href="#about-me" class="goto-about" onclick="gotoAboutSection(event)">
+                        About me
+                    </a>
+                </li>
+                <li class="navbar__contents__li">
+                    <a href="#portfolio" class="goto-portfolio" onclick="gotoPortfolioSection(event)">
+                        Portfolio
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+
+    <nav id="nav-mobile">
+        <div class="hamburguer">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="navlinks">
+            <li class="nav-link">
+                <a href="#main-info" class="nav-link__link" onclick="gotoContactSection(event)">
+                    Contact
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="#about-me" onclick="gotoAboutSection(event)" class="nav-link__link">
+                    About me
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="#portfolio" class="nav-link__link" onclick="gotoPortfolioSection(event)">
+                    Portfolio
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--End: Navigation bar-->
+
+    <!--Start: Main content-->
+
+    <div class="particles-cont">
+        <div id="particles-js"></div>
+        <section id="main-info" class="content">
+            <div class="main-box">
+                <div class="content__media">
+                    <img class="content__media__image" src="./res/images/IMG_20191223_212738.jpg"
+                        alt="My picture" />
+                    <div class="content__media__info">
+                        <p class="content__media__name">
+                            <span class="cap">C</span>hristian <span class="cap">O</span>choa
+                        </p>
+                        <p class="content__media__desc">Software developer, Freelancer, Student.</p>
+                    </div>
+                </div>
+                <div class="content__platforms">
+                    <div class="platform show-effect-gh">
+                        <a href="https://github.com/deadchri5" target="_blank">
+                            <img src="./res/images/icons/github-icon.svg" alt="Github">
+                        </a>
+                    </div>
+                    <div class="platform show-effect-link">
+                        <a href="https://linkedin.com/in/christianOchoa5" target="_blank">
+                            <img src="./res/images/icons/linkedin.svg" alt="Linkedin">
+                        </a>
+                    </div>
+                    <div class="platform show-effect-discord">
+                        <img src="./res/images/icons/discord.svg" alt="Discord">
+                    </div>
+                    <div class="platform show-effect-gmail">
+                        <a href="mailto:christianhdez022@gmail.com">
+                            <img src="./res/images/icons/gmail.svg" alt="Email">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--End: Main content-->
+
+    <!--Start: about me section-->
+
+    <div id="svg-decoration">
+        <div class="background">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#212121" fill-opacity="1"
+                    d="M0,160L34.3,160C68.6,160,137,160,206,181.3C274.3,203,343,245,411,234.7C480,224,549,160,617,128C685.7,96,754,96,823,90.7C891.4,85,960,75,1029,96C1097.1,117,1166,171,1234,186.7C1302.9,203,1371,181,1406,170.7L1440,160L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+
+    <section id="about-me" class="about-me">
+        <div id="about-me-content" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" ata-aos-offset="200">
+            <h1>
+                Hi, i'm Christian!
+            </h1>
+            <span id="typed-strings">
+    
+            </span>
+            <p class="about-me__paragraph">
+                Student of software engineering in <strong>Guadalajara, México</strong>.
+                <br />
+                I describe myself as someone who love technology from the simplest to the most complex.
+                <br/>
+                As a software developer i have the tought that it is always good to larning new things. I learned
+                that from my career. 
+                <br/>
+                My best skills are in the <strong>web development</strong> sector, as a 
+                <strong>fullstack developer</strong>.
+            </p>
+            <i class="about-me__paragraph">
+                Thanks for visit my personal web page, you can feel free to get in touch and take a look
+                at my work.
+            </i>
+            <p class="about-me__paragraph">
+                Regards!
+            </p>
+        </div>
+    </section>
+
+    <!--End: about me section-->
+
+    <section id="portfolio">
+        <h2 class="porftolio-title" data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1500">
+            Portfolio
+        </h2>
+        <p class="portfolio-desc" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="2000">
+            There's some of my work (Personal and school projects).
+        </p>
+        <div id="card-container" class="portfolio-container">
+
+        </div>
+    </section>
+
+
+    <!--Start: footer section-->
+
+    <footer class="footer">
+        <div class="box">
+            <div class="container">
+                <section class="col">
+                    <ul class="social">
+                        <span class="footer__subtitle">Contact</span>
+                        <li>
+                            <a href="https://github.com/deadchri5" target="_blank">
+                                Github
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/christianOchoa5" target="_blank">
+                                Linkedin
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:christianhdez022@gmail.com">
+                                Email
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="container">
+                <section class="col">
+                    <ul class="map-site">
+                        <span class="footer__subtitle">Map of the site</span>
+                        <li>
+                            <a href="#about-me" class="goto-contact" onclick="gotoContactSection(event)">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#main-info"class="goto-about" onclick="gotoAboutSection(event)">
+                                About me
+                            </a>
+                        </li>
+                        <li>
+                           <a href="#portfolio" class="goto-portfolio" onclick="gotoPortfolioSection(event)">
+                            Portfolio
+                        </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <p class="footer__txt">&copy; 2021 Christian Ochoa</p>
+    </footer>
+
+    <!--End: footer section-->
+
+    <!--Scripts-->
+    <script src="./res/scripts/effects.js"></script>
+    <script src="./res/scripts/navbarDesktop.js"></script>
+    <script src="./res/scripts/navbarMobile.js"></script>
+    <script src="./res/scripts/buttons.js"></script>
+    <script src="./res/scripts/portfolio.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--Particles Js library-->
+    <script type="text/javascript" src="./node_modules/particles.js/particles.js"></script>
+    <script type="text/javascript" src="./node_modules/particles.js/demo/js/app.js"></script>
+    <!--TypedJs-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./res/scripts/typed.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+#portfolio{
+    padding: 4rem 0;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    .porftolio-title{
+        color: $white;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .portfolio-desc{
+        color: $color-gray-light;
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        padding: 0 1rem;
+    }
+    .portfolio-container{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.card{
+    background-color: $white;
+    width: 20rem;
+    border-radius: 5px;
+    border: 2px solid $color-base;
+    margin: 2rem 1rem;
+    &__img{
+        width: 100%;
+        height: 50%;
+    }
+    &__body{
+        padding: 1rem;
+        &__title{
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        &__p{
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+        &__btn{
+            background-color: $color-primary-darker;
+            text-decoration: none;
+            padding: 10px;
+            color: $white;
+            border-radius: 5px;
+            &:hover{
+                transition: ease 0.3s all;
+                background-color: $color-primary-darkest;
+            }
+        }
+    }
+}
+
+/*Responsive*/
+
+@mixin cardResponsive ($cardWidth, $cardMargin, $imgHeight, 
+                      $titleSize, $textSize, $marginBttm, $btnPadding){
+    .card{
+        width: $cardWidth;
+        margin: $cardMargin;
+        &__img{
+            height: $imgHeight;
+        }
+        &__body_title{
+            font-size: $titleSize;
+        }
+        &__body__p{
+            font-size: $textSize;
+            margin-bottom: $marginBttm;
+            border-radius: 6px;
+        }
+        &__body__btn{
+            padding: $btnPadding;
+        }
+    }
+}
+
+@media screen and (max-width: 1184px)
+{
+    @include cardResponsive(26.6%, 1.5rem 1rem, 40%, 1.5rem, 0.9rem, 2rem, 10px);
+}
+
+@media screen and (max-width: 977px)
+{
+    @include cardResponsive(40%, 1.5rem 2rem, 50%, 1.5rem, 0.9rem, 2.3rem, 10px);
+    .card{
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width: 822px)
+{
+    @include cardResponsive(40%, 1rem 1rem, 50%, 1.5rem, 0.9rem, 2rem, 10px);
+}
+
+@media screen and (max-width: 703px)
+{
+    @include cardResponsive(60%, 1rem 1rem, 50%, 1.5rem, 0.9rem, 3rem, 10px);
+    .card{
+        height: 27rem;
+    }
+}
+
+@media screen and (max-width: 582px)
+{
+    #portfolio{
+        .porftolio-title{
+            margin-top: 0;
+            font-size: 2.5rem
+        }
+        .portfolio-desc{
+            font-size: 1.1rem;
+        }
+    }
+    @include cardResponsive(80%, 1rem 1rem, 50%, 1.5rem, 0.9rem, 3rem, 10px);
+}
+
+@media screen and (max-width: 442px)
+{
+    #portfolio{
+        .porftolio-title{
+            font-size: 2.3rem
+        }
+        .portfolio-desc{
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media screen and (max-width: 366px)
+{
+    @include cardResponsive(90%, 1rem 1rem, 40%, 1rem, 0.9rem, 2rem, 10px);
+    #portfolio{
+        .card{
+            height: 22rem;
+        }
+        .portfolio-desc{
+            font-size: 0.9rem;
+            line-height: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 349px)
+{
+    @include cardResponsive(90%, 1rem 1rem, 40%, 1rem, 0.9rem, 2rem, 10px);
+    .card{
+        height: 23rem;
+    }
+}

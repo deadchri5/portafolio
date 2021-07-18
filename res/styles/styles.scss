@@ -1,0 +1,29 @@
+//Fonts (from google)
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+//Colors
+@import './variables';
+
+//Effects
+@import './effects/bouncing';
+@import './effects/particlesjs';
+
+//Styles of sections of page
+@import './components/navbar';
+@import './components/navbarMobile';
+@import './components/footer';
+@import './components/hovers';
+@import './components/mainContent';
+@import './components/aboutMe';
+@import './components/portfolio';
+
+//Global styles
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: $color-base;
+}
+
+.cap{
+    color: $color-secondary;
+    font-weight: 700;
+}
