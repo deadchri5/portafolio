@@ -7,6 +7,7 @@
         font-size: 1.5rem;
         color: $color-primary-darker;
         font-weight: 800;
+        line-height: 5vh;
     }
     &__paragraph{
         font-size: 1.5rem;
@@ -15,6 +16,10 @@
         line-height: 40px;
         font-style: normal;
         margin-top: 1rem;
+    }
+    .typed-box{
+        height: 12vh;
+        margin: 6vh 0 0;
     }
 }
 
@@ -41,6 +46,7 @@
     .about-me {
         #typed-strings{
             font-size: $fontSizeTyped;
+            line-height: 7vh;
         }
         &__paragraph{
             font-size: $fontSize;
@@ -62,6 +68,14 @@
     }
 }
 
+@media screen and (max-width: 685px){
+    .about-me{
+        .typed-box{
+            height: 18vh;
+        }
+    }
+}
+
 @media screen and (max-width: 428px)
 {
     @include aboutMeResponsive(1rem, 1rem, 1rem, 23px);
@@ -69,6 +83,14 @@
         padding: 1rem 2rem 4rem;
         &__paragraph{
             margin: 20px 0;
+        }
+    }
+    .about-me {
+        #typed-strings{
+            line-height: 3vh;
+        }
+        .typed-box{
+            height: 10vh;
         }
     }
 }

@@ -4,33 +4,40 @@ const works =
 [
     {
         "image": "",
-        "name": "Website for pet adoptions",
-        "desc": "I build this project with AngularJS, Node JS and Mongo DB.",
+        "name": "Página web de adopciones",
+        "desc": "Es una página web que tiene como finalidad ayudar a animales domésticos en " +
+                "situación de calle a encontrar un hogar. Tecnologías usadas: (Angular, Node JS, MongoDB).",
         "link": "https://github.com/deadchri5"
     },
     {
         "image": "./res/images/Projects/projMinisuper-min.jpg",
-        "name": "E-commerse for a grocery store",
-        "desc": "This project is a marketplace for a local store called 'Abarrotes Topcacio', i build it with Angular, Laravel, and MySQL.",
+        "name": "E-commerce para tienda de abarrotes",
+        "desc": "Sistema de e-commerce desarrollado para una tienda local. Tecnologías (Angular, Laravel, y MySQL).",
         "link": "https://github.com/deadchri5/minisuper"
     },
     {
-        "image": "",
-        "name": "Tool for adminstration in a restaurant",
-        "desc": "I was part of this project, that was developed in Java. Is a graphic interface who helps with the administration in local restaurants.",
+        "image": "./res/images/Projects/java_interface2-min.png",
+        "name": "Herramienta de administración",
+        "desc": "Fui parte de este proyecto, es un software de escritorio el cual tiene la finalidad de ayudar a las cuentas en un restaurante, fue desarrollado con Java y FXML.",
         "link": "https://github.com/deadchri5"
     },
     {
         "image": "./res/images/Projects/projCham-min.jpg",
-        "name": "Personal website",
-        "desc": "This is a website to get in touch with my software team. It was made with ReactJS.",
+        "name": "Sitio web personal",
+        "desc": "Sitio web para ponerse en contacto con un equipo de desarrollo de software. Fue hecho con ReactJS.",
         "link": "https://champrogrammers.github.io/web/"
     },
     {
         "image": "./res/images/Projects/citasVet-min.jpg",
-        "name": "Appointments for a veterinaty",
-        "desc": "This is a school project for agent appointments in a ficticial veterinary. It was maded with C# and WPF.",
+        "name": "Sistema de citas",
+        "desc": "Es un proyecto escolar para gestionar y agendar citas en una veterinaria. Escrito en C# y WPF.",
         "link": "https://github.com/deadchri5/VeterinariaCS"
+    },
+    {
+        "image": "",
+        "name": "Código de portafolio",
+        "desc": "Pulsa en ver trabajo para ver el código de mi portafolio personal. (La página que usted ve en este momento)",
+        "link": "https://github.com/deadchri5/portafolio/tree/master"
     }
 ]
 
@@ -55,7 +62,7 @@ const setWorkinCards = () =>{
         '<p class="card__body__p">'+
             work.desc+
         '</p>'+
-        '<a href="'+work.link+'" target="_blank" class="card__body__btn">View work</a>'+
+        '<a href="'+work.link+'" target="_blank" class="card__body__btn">Ver trabajo</a>'+
           '</div>'+
         '</div>'
         i++

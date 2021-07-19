@@ -1,10 +1,10 @@
 const typed = new Typed('#typed-strings', {
     strings: [
         "",
-        "💻 Software developer.",
-        "🎓 Graduated from CETI Colomos as Software Developer Technologist.",
-        "💡 I'm interesed in web developmet and hybrid movile apps (react native).",
-        "📚 I Currenly studying software development engineering."
+        "💻 Desarrollador de Software.",
+        "🎓 Graduado de CETI Colomos como técnologo en desarrollo de software.",
+        "💡 Estoy interesado en desarrollo web y desarrollo de aplicaciones móviles híbridas (React native).",
+        "📚 Actualmente curso ingeniería de software en la universidad."
     ],
     loop: true,
     typeSpeed: 15

@@ -796,6 +796,7 @@
   font-size: 1.5rem;
   color: #0b3d91;
   font-weight: 800;
+  line-height: 5vh;
 }
 
 .about-me__paragraph {
@@ -805,6 +806,11 @@
   line-height: 40px;
   font-style: normal;
   margin-top: 1rem;
+}
+
+.about-me .typed-box {
+  height: 12vh;
+  margin: 6vh 0 0;
 }
 
 #svg-decoration {
@@ -829,6 +835,7 @@
   }
   .about-me #typed-strings {
     font-size: 1.3rem;
+    line-height: 7vh;
   }
   .about-me__paragraph {
     font-size: 1rem;
@@ -843,12 +850,19 @@
   }
 }
 
+@media screen and (max-width: 685px) {
+  .about-me .typed-box {
+    height: 18vh;
+  }
+}
+
 @media screen and (max-width: 428px) {
   h1 {
     font-size: 1rem;
   }
   .about-me #typed-strings {
     font-size: 1rem;
+    line-height: 7vh;
   }
   .about-me__paragraph {
     font-size: 1rem;
@@ -860,6 +874,12 @@
   }
   .about-me__paragraph {
     margin: 20px 0;
+  }
+  .about-me #typed-strings {
+    line-height: 3vh;
+  }
+  .about-me .typed-box {
+    height: 10vh;
   }
 }
 
@@ -911,11 +931,20 @@
 
 .card__img {
   width: 100%;
-  height: 50%;
+  height: 30vh;
 }
 
 .card__body {
   padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .card__body__title {
@@ -930,6 +959,7 @@
   line-height: 1.5;
   text-align: left;
   margin-bottom: 2rem;
+  height: 8rem;
 }
 
 .card__body__btn {
@@ -947,182 +977,20 @@
 }
 
 /*Responsive*/
-@media screen and (max-width: 1184px) {
-  .card {
-    width: 26.6%;
-    margin: 1.5rem 1rem;
-  }
-  .card__img {
-    height: 40%;
-  }
-  .card__body_title {
-    font-size: 1.5rem;
-  }
-  .card__body__p {
-    font-size: 0.9rem;
-    margin-bottom: 2rem;
-    border-radius: 6px;
-  }
-  .card__body__btn {
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 977px) {
-  .card {
-    width: 40%;
-    margin: 1.5rem 2rem;
-  }
-  .card__img {
-    height: 50%;
-  }
-  .card__body_title {
-    font-size: 1.5rem;
-  }
-  .card__body__p {
-    font-size: 0.9rem;
-    margin-bottom: 2.3rem;
-    border-radius: 6px;
-  }
-  .card__body__btn {
-    padding: 10px;
-  }
-  .card {
-    height: 25rem;
-  }
-}
-
-@media screen and (max-width: 822px) {
-  .card {
-    width: 40%;
-    margin: 1rem 1rem;
-  }
-  .card__img {
-    height: 50%;
-  }
-  .card__body_title {
-    font-size: 1.5rem;
-  }
-  .card__body__p {
-    font-size: 0.9rem;
-    margin-bottom: 2rem;
-    border-radius: 6px;
-  }
-  .card__body__btn {
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 703px) {
-  .card {
-    width: 60%;
-    margin: 1rem 1rem;
-  }
-  .card__img {
-    height: 50%;
-  }
-  .card__body_title {
-    font-size: 1.5rem;
-  }
-  .card__body__p {
-    font-size: 0.9rem;
-    margin-bottom: 3rem;
-    border-radius: 6px;
-  }
-  .card__body__btn {
-    padding: 10px;
-  }
-  .card {
-    height: 27rem;
-  }
-}
-
-@media screen and (max-width: 582px) {
-  #portfolio .porftolio-title {
-    margin-top: 0;
-    font-size: 2.5rem;
-  }
+@media screen and (max-width: 646px) {
   #portfolio .portfolio-desc {
+    font-size: 1rem;
+    line-height: 4vh;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .card__img {
+    width: 100%;
+    height: 20vh;
+  }
+  .card__body__title {
     font-size: 1.1rem;
-  }
-  .card {
-    width: 80%;
-    margin: 1rem 1rem;
-  }
-  .card__img {
-    height: 50%;
-  }
-  .card__body_title {
-    font-size: 1.5rem;
-  }
-  .card__body__p {
-    font-size: 0.9rem;
-    margin-bottom: 3rem;
-    border-radius: 6px;
-  }
-  .card__body__btn {
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 442px) {
-  #portfolio .porftolio-title {
-    font-size: 2.3rem;
-  }
-  #portfolio .portfolio-desc {
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (max-width: 366px) {
-  .card {
-    width: 90%;
-    margin: 1rem 1rem;
-  }
-  .card__img {
-    height: 40%;
-  }
-  .card__body_title {
-    font-size: 1rem;
-  }
-  .card__body__p {
-    font-size: 0.9rem;
-    margin-bottom: 2rem;
-    border-radius: 6px;
-  }
-  .card__body__btn {
-    padding: 10px;
-  }
-  #portfolio .card {
-    height: 22rem;
-  }
-  #portfolio .portfolio-desc {
-    font-size: 0.9rem;
-    line-height: 25px;
-  }
-}
-
-@media screen and (max-width: 349px) {
-  .card {
-    width: 90%;
-    margin: 1rem 1rem;
-  }
-  .card__img {
-    height: 40%;
-  }
-  .card__body_title {
-    font-size: 1rem;
-  }
-  .card__body__p {
-    font-size: 0.9rem;
-    margin-bottom: 2rem;
-    border-radius: 6px;
-  }
-  .card__body__btn {
-    padding: 10px;
-  }
-  .card {
-    height: 23rem;
   }
 }
 
