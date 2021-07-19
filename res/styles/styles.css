@@ -808,6 +808,16 @@
   margin-top: 1rem;
 }
 
+.about-me__paragraph .sp-react {
+  color: #0693E3;
+  font-weight: 700;
+}
+
+.about-me__paragraph .sp-angular {
+  color: #d32f2f;
+  font-weight: 700;
+}
+
 .about-me .typed-box {
   height: 12vh;
   margin: 6vh 0 0;

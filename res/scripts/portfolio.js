@@ -36,7 +36,7 @@ const works =
     {
         "image": "",
         "name": "Código de portafolio",
-        "desc": "Pulsa en ver trabajo para ver el código de mi portafolio personal. (La página que usted ve en este momento)",
+        "desc": "Código de mi portafolio personal, si usted lo desea observar pulse en el botón de la tarjeta para ver el repositorio.",
         "link": "https://github.com/deadchri5/portafolio/tree/master"
     }
 ]
