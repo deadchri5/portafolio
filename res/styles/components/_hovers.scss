@@ -1,47 +1,47 @@
 @mixin showDetailEffect($content) {
-    position: relative;
-    &::before{
-        content: $content;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 150%);
-        color: $white;
-        bottom: 0;
-        padding: 3px;
-        background-color: $color-primary-darker;
-        border-radius: 5px;
-        width: max-content;
-        height: max-content;
-        animation: fadeIn 0.5s ease-in-out;
-    }
+  position: relative;
+  &::before {
+    content: $content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 150%);
+    color: $white;
+    bottom: 0;
+    padding: 3px;
+    background-color: $color-primary-darker;
+    border-radius: 5px;
+    width: max-content;
+    height: max-content;
+    animation: fadeIn 0.5s ease-in-out;
+  }
 }
 
-#showDetailGitHub{
-    @include showDetailEffect("@deadchri5");
+#showDetailGitHub {
+  @include showDetailEffect("@deadchri5");
 }
 
-#showDetailLinkedin{
-    @include showDetailEffect("Christian");
+#showDetailLinkedin {
+  @include showDetailEffect("Christian");
 }
 
-#showDetailDiscord{
-    @include showDetailEffect("deadchri5#7558");
+#showDetailDiscord {
+  @include showDetailEffect("deadchri5#7558");
 }
 
-#showDetailSlack{
-    @include showDetailEffect("Slack");
+#showDetailSlack {
+  @include showDetailEffect("Slack");
 }
 
-#showDetailGmail{
-    @include showDetailEffect("christianhdez022@gmail.com");
+#showDetailGmail {
+  @include showDetailEffect("christianhdez022@gmail.com");
 }
 
 @keyframes fadeIn {
-    from{
-        opacity: 10;
-    }
-    to{
-        opacity: 0;
-    }
+  from {
+    opacity: 10;
+  }
+  to {
+    opacity: 0;
+  }
 }

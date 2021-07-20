@@ -1,130 +1,130 @@
-#nav-mobile{
-    width: 100%;
-    height: 5rem;
-    display: none;
-    opacity: 0.9;
+#nav-mobile {
+  width: 100%;
+  height: 5rem;
+  display: none;
+  opacity: 0.9;
 }
 
-.navlinks li:nth-child(1){
-    margin-top: 10vh;
+.navlinks li:nth-child(1) {
+  margin-top: 10vh;
 }
 
-.navlinks{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 70%;
-    height: 100vh;
-    background-color: $color-gray-dark;
-    position: fixed;
-    z-index: 20;
-    right: 0;
-    margin-left: auto;
-    display: none;
-    .nav-link{
-        text-align: center;
-        padding: 2rem 0 0;
-        &__link{
-            text-decoration: none;
-            font-weight: 800;
-            font-size: 1.2rem;
-            color: $color-gray-light;
-            &:hover{
-                transition: 0.7s ease all;
-                cursor: pointer;
-                color: white;
-            }
-        }
+.navlinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: $color-gray-dark;
+  position: fixed;
+  z-index: 20;
+  right: 0;
+  margin-left: auto;
+  display: none;
+  .nav-link {
+    text-align: center;
+    padding: 2rem 0 0;
+    &__link {
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: $color-gray-light;
+      &:hover {
+        transition: 0.7s ease all;
+        cursor: pointer;
+        color: white;
+      }
     }
+  }
 }
 
-#nav-mobile{
-    position: fixed;
-    z-index: 20;
+#nav-mobile {
+  position: fixed;
+  z-index: 20;
 }
 
-.open-anim{
-    animation: MobileNavBar 0.6s ease-in;
-    display: initial;
+.open-anim {
+  animation: MobileNavBar 0.6s ease-in;
+  display: initial;
 }
 
-.remove-opacity{
-    opacity: 1 !important;
+.remove-opacity {
+  opacity: 1 !important;
 }
 
-.hamburguer{
-    position: absolute;
-    cursor: pointer;
-    right: 5%;
-    top: 50%;
-    transform: translate(-5%, -50%);
-    z-index: 21;
-    .line{
-        width: 30px;
-        height: 3px;
-        background-color: $color-primary;
-        margin: 5px;
-    }
+.hamburguer {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  z-index: 21;
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: $color-primary;
+    margin: 5px;
+  }
 }
 
-.close div:nth-child(1){
-    transition: 0.3s ease all;
-    transform: rotate(45deg);
-    position: absolute;
-    background-color: $white;
-    top: 0;
+.close div:nth-child(1) {
+  transition: 0.3s ease all;
+  transform: rotate(45deg);
+  position: absolute;
+  background-color: $white;
+  top: 0;
 }
 
-.close div:nth-child(2){
-    opacity: 0;
+.close div:nth-child(2) {
+  opacity: 0;
 }
 
-.close div:nth-child(3){
-    transition: 0.3s ease all;
-    transform: rotate(-45deg);
-    position: absolute;
-    background-color: $white;
-    top: 0;
+.close div:nth-child(3) {
+  transition: 0.3s ease all;
+  transform: rotate(-45deg);
+  position: absolute;
+  background-color: $white;
+  top: 0;
 }
 
 @keyframes MobileNavBar {
-    from{
-        opacity: 0;
-    }
-    to{
-        width: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    width: 1;
+  }
 }
 
 /*Responsive*/
 
 @mixin navLinksWidth($width) {
-    .navlinks{
-        width: $width;
-    }
+  .navlinks {
+    width: $width;
+  }
 }
 
-@mixin navHeight ($height){
-    #nav-mobile{
-        height: $height;
-    }
-    .navlinks li:nth-child(1){
-        margin-top: $height;
-    }
+@mixin navHeight($height) {
+  #nav-mobile {
+    height: $height;
+  }
+  .navlinks li:nth-child(1) {
+    margin-top: $height;
+  }
 }
 
 @media screen and (max-width: 902px) {
-    #nav-mobile{
-        display: initial;
-    }
-    @include navLinksWidth(40%);
+  #nav-mobile {
+    display: initial;
+  }
+  @include navLinksWidth(40%);
 }
 
 @media screen and (max-width: 600px) {
-    @include navLinksWidth(60%);
-    @include navHeight(4rem);
+  @include navLinksWidth(60%);
+  @include navHeight(4rem);
 }
 
 @media screen and (max-width: 400px) {
-    @include navLinksWidth(70%)
+  @include navLinksWidth(70%);
 }

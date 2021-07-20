@@ -1,104 +1,101 @@
-.about-me{
-    height: 100vh;
-    color: $color-base;
-    background-color: $white;
-    padding: 1rem 6rem 4rem;
-    #typed-strings{
-        font-size: 1.5rem;
-        color: $color-primary-darker;
-        font-weight: 800;
-        line-height: 5vh;
+.about-me {
+  height: 100vh;
+  color: $color-base;
+  background-color: $white;
+  padding: 1rem 6rem 4rem;
+  #typed-strings {
+    font-size: 1.5rem;
+    color: $color-primary-darker;
+    font-weight: 800;
+    line-height: 5vh;
+  }
+  &__paragraph {
+    font-size: 1.5rem;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    line-height: 40px;
+    font-style: normal;
+    margin-top: 1rem;
+    .sp-react {
+      color: #0693e3;
+      font-weight: 700;
     }
-    &__paragraph{
-        font-size: 1.5rem;
-        letter-spacing: 0.8px;
-        font-weight: 600;
-        line-height: 40px;
-        font-style: normal;
-        margin-top: 1rem;
-        .sp-react{
-            color: #0693E3;
-            font-weight: 700;
-        }
-        .sp-angular{
-            color: #d32f2f;
-            font-weight: 700;
-        }
+    .sp-angular {
+      color: #d32f2f;
+      font-weight: 700;
     }
-    .typed-box{
-        height: 12vh;
-        margin: 6vh 0 0;
-    }
+  }
+  .typed-box {
+    height: 12vh;
+    margin: 6vh 0 0;
+  }
 }
 
-#svg-decoration{
-    background-color: $white;
-    position: relative;
-    &__background{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        z-index: 0;
-    }
+#svg-decoration {
+  background-color: $white;
+  position: relative;
+  &__background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
 }
 
 /* Media Queries and mixings
     Section about me
 */
 
-@mixin aboutMeResponsive ($h1FontSize, $fontSizeTyped, $fontSize, $lineHeight) {
-    h1{
-        font-size: $h1FontSize;
+@mixin aboutMeResponsive($h1FontSize, $fontSizeTyped, $fontSize, $lineHeight) {
+  h1 {
+    font-size: $h1FontSize;
+  }
+  .about-me {
+    #typed-strings {
+      font-size: $fontSizeTyped;
+      line-height: 7vh;
     }
-    .about-me {
-        #typed-strings{
-            font-size: $fontSizeTyped;
-            line-height: 7vh;
-        }
-        &__paragraph{
-            font-size: $fontSize;
-            letter-spacing: 0.5px;
-            line-height: $lineHeight;
-        }
+    &__paragraph {
+      font-size: $fontSize;
+      letter-spacing: 0.5px;
+      line-height: $lineHeight;
     }
+  }
 }
 
-@media screen and (max-width: 801px)
-{
-    @include aboutMeResponsive(1.5rem, 1.3rem, 1rem, 23px);
+@media screen and (max-width: 801px) {
+  @include aboutMeResponsive(1.5rem, 1.3rem, 1rem, 23px);
 }
 
-@media screen and (max-width: 601px)
-{
-    .about-me {
-        padding: 1rem 4rem 4rem;
-    }
+@media screen and (max-width: 601px) {
+  .about-me {
+    padding: 1rem 4rem 4rem;
+  }
 }
 
-@media screen and (max-width: 685px){
-    .about-me{
-        .typed-box{
-            height: 18vh;
-        }
+@media screen and (max-width: 685px) {
+  .about-me {
+    .typed-box {
+      height: 18vh;
     }
+  }
 }
 
-@media screen and (max-width: 428px)
-{
-    @include aboutMeResponsive(1rem, 1rem, 1rem, 23px);
-    .about-me{
-        padding: 1rem 2rem 4rem;
-        &__paragraph{
-            margin: 20px 0;
-        }
+@media screen and (max-width: 428px) {
+  @include aboutMeResponsive(1rem, 1rem, 1rem, 23px);
+  .about-me {
+    padding: 1rem 2rem 4rem;
+    &__paragraph {
+      margin: 20px 0;
     }
-    .about-me {
-        #typed-strings{
-            line-height: 3vh;
-        }
-        .typed-box{
-            height: 10vh;
-        }
+  }
+  .about-me {
+    #typed-strings {
+      line-height: 3vh;
     }
+    .typed-box {
+      height: 10vh;
+    }
+  }
 }
