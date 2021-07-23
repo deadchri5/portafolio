@@ -809,7 +809,7 @@
 }
 
 .about-me__paragraph .sp-react {
-  color: #0693E3;
+  color: #0693e3;
   font-weight: 700;
 }
 
@@ -973,11 +973,16 @@
 }
 
 .card__body__btn {
+  margin: 3px 0;
   background-color: #0b3d91;
   text-decoration: none;
   padding: 10px;
   color: #f5fffa;
   border-radius: 5px;
+}
+
+.card__body__btn__media {
+  background-color: #105bd8;
 }
 
 .card__body__btn:hover {

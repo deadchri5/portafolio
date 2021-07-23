@@ -54,6 +54,10 @@
       height: 8rem;
     }
     &__btn {
+      margin: 3px 0;
+      &__media {
+        background-color: $color-primary;
+      }
       background-color: $color-primary-darker;
       text-decoration: none;
       padding: 10px;
