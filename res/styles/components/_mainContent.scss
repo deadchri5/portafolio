@@ -1,167 +1,178 @@
-.particles-cont{
-    height: 100vh;
+.particles-cont {
+  height: 100vh;
 }
 
-.content{
-    color: $color-gray-light;
-    width: max-content;
-    margin: auto;
+.slide-element {
+  position: absolute;
+  color: $white;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.content {
+  color: $color-gray-light;
+  width: max-content;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  &__media {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    &__media{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        &__info{
-            width: max-content;
-            margin: 0.5rem auto;
-            text-align: center;
-            p{
-                margin: 15px 0;
-            }
-        }
-        &__image{
-            display: block;
-            width: 8rem;
-            height: 8rem;
-            border-radius: 50%;
-        }
-        &__name{
-            font-size: 4rem;
-        }
-        &__desc{
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            position: relative;
-            &::after{
-                content: "}";
-                position: absolute;
-                color: $color-primary;
-                right: -2rem;
-                font-size: 3rem;
-                top: -1rem;
-            }
-            &::before{
-                content: "{";
-                position: absolute;
-                color: $color-primary;
-                left: -2rem;
-                font-size: 3rem;
-                top: -1rem;
-            }
-        }
+    flex-direction: column;
+    &__info {
+      width: max-content;
+      margin: 0.5rem auto;
+      text-align: center;
+      p {
+        margin: 15px 0;
+      }
     }
-    &__platforms{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin: auto;
-        width: 80%;
-        .platform{
-            img{
-                border-radius: 50%;
-                width: 3rem;
-                &:hover{
-                    transition: ease 3ms all;
-                    cursor: pointer;
-                    animation: bounce 1.2s ease;
-                }
-            }
-        }
+    &__image {
+      display: block;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
     }
+    &__name {
+      font-size: 4rem;
+    }
+    &__desc {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      position: relative;
+      &::after {
+        content: "}";
+        position: absolute;
+        color: $color-primary;
+        right: -2rem;
+        font-size: 3rem;
+        top: -1rem;
+      }
+      &::before {
+        content: "{";
+        position: absolute;
+        color: $color-primary;
+        left: -2rem;
+        font-size: 3rem;
+        top: -1rem;
+      }
+    }
+  }
+  &__platforms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 80%;
+    .platform {
+      img {
+        border-radius: 50%;
+        width: 3rem;
+        &:hover {
+          transition: ease 3ms all;
+          cursor: pointer;
+          animation: bounce 1.2s ease;
+        }
+      }
+    }
+  }
 }
 
 //Responsive
 
 //mixin's
-@mixin mainContentResponsive ($fontSize, $fontDesc, $translate, $imageSize, $iconSize) {
-    .content{
-        .main-box{
-            transform: translateY($translate);
-        }
-        &__media{
-            &__image{
-                width: $imageSize;
-                height: $imageSize;
-            }
-            &__name{
-                font-size: $fontSize;
-            }
-            &__desc{
-                font-size: $fontDesc;
-            }
-        }
-        &__platforms{
-            width: 100%;
-            .platform{
-                img{
-                    width: $iconSize;
-                }
-            }
-        }
+@mixin mainContentResponsive(
+  $fontSize,
+  $fontDesc,
+  $translate,
+  $imageSize,
+  $iconSize
+) {
+  .content {
+    .main-box {
+      transform: translateY($translate);
     }
+    &__media {
+      &__image {
+        width: $imageSize;
+        height: $imageSize;
+      }
+      &__name {
+        font-size: $fontSize;
+      }
+      &__desc {
+        font-size: $fontDesc;
+      }
+    }
+    &__platforms {
+      width: 100%;
+      .platform {
+        img {
+          width: $iconSize;
+        }
+      }
+    }
+  }
 }
 
-@mixin smallScreenFix ($fontSize, $rigth, $left, $top) {
-    .content
-    {
-        &__media__desc{
-            &::after {
-                font-size: $fontSize;
-                right: $rigth;
-                top: $top;
-            }
-            &::before{
-                font-size: $fontSize;
-                left: $left;
-                top: $top;
-            }
-        }
+@mixin smallScreenFix($fontSize, $rigth, $left, $top) {
+  .content {
+    &__media__desc {
+      &::after {
+        font-size: $fontSize;
+        right: $rigth;
+        top: $top;
+      }
+      &::before {
+        font-size: $fontSize;
+        left: $left;
+        top: $top;
+      }
     }
+  }
 }
 
 //Media querys
-@media screen and (max-width: 1292px)
-{
-    @include mainContentResponsive(3rem, 1.5rem, -3rem, 8rem, 2.2rem);
+@media screen and (max-width: 1292px) {
+  @include mainContentResponsive(3rem, 1.5rem, -3rem, 8rem, 2.2rem);
 }
 
-@media screen and (max-width: 966px)
-{
-    @include mainContentResponsive(2.5rem, 1rem, -3rem, 6rem, 1.8rem);
+@media screen and (max-width: 966px) {
+  @include mainContentResponsive(2.5rem, 1rem, -3rem, 6rem, 1.8rem);
 }
 
-@media screen and (max-width: 563px)
-{
-    @include mainContentResponsive(2rem, 0.8rem, -3rem, 6rem, 1.8rem);
-    .content__platforms{
-        width: 80%;
-        .platform img {
-            width: 1.5rem;
-        }
+@media screen and (max-width: 563px) {
+  @include mainContentResponsive(2rem, 0.8rem, -3rem, 6rem, 1.8rem);
+  .content__platforms {
+    width: 80%;
+    .platform img {
+      width: 1.5rem;
     }
+  }
 }
 
-@media screen and (max-width: 440px)
-{
-    @include mainContentResponsive(1.3rem, 0.8rem, -3rem, 5rem, 1.8rem);
-    @include smallScreenFix(2rem, -1rem, -1rem, -0.9rem)
-    
+@media screen and (max-width: 440px) {
+  @include mainContentResponsive(1.3rem, 0.8rem, -3rem, 5rem, 1.8rem);
+  @include smallScreenFix(2rem, -1rem, -1rem, -0.9rem);
 }
 
-@media screen and (max-width: 395px)
-{
-    @include mainContentResponsive(1.3rem, 0.7rem, -3rem, 5rem, 1.8rem);
+@media screen and (max-width: 395px) {
+  @include mainContentResponsive(1.3rem, 0.7rem, -3rem, 5rem, 1.8rem);
 }
 
-@media screen and (max-width: 339px)
-{
-    @include mainContentResponsive(1.3rem, 0.6rem, -3rem, 5rem, 1.8rem);
+@media screen and (max-width: 339px) {
+  @include mainContentResponsive(1.3rem, 0.6rem, -3rem, 5rem, 1.8rem);
 }
