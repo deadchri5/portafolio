@@ -530,6 +530,9 @@
   text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
+  opacity: 10;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
 }
 
 .slide-element p {
@@ -593,6 +596,12 @@
     -webkit-transform: translateY(-3px);
             transform: translateY(-3px);
   }
+}
+
+.slide-fade {
+  opacity: 0;
+  -webkit-transition: ease 1s all;
+  transition: ease 1s all;
 }
 
 .content {

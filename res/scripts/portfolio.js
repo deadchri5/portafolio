@@ -96,7 +96,6 @@ const setWorkinCards = () => {
       "</div>";
     i++;
   });
-  console.log(cardContainer);
 };
 
 /*

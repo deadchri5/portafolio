@@ -30,3 +30,13 @@ document
   .addEventListener("mouseleave", () => {
     gmailHover.removeAttribute("id");
   });
+
+//Efect of slide sown element
+let slideDown = document.getElementById("slide-down");
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop >= 159 || document.documentElement.scrollTop >= 159) {
+    slideDown.classList.add("slide-fade");
+  }
+  else
+  slideDown.classList.remove("slide-fade")
+})
