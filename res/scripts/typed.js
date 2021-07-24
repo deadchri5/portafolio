@@ -7,5 +7,5 @@ const typed = new Typed("#typed-strings", {
     "📚 Actualmente curso ingeniería de software en la universidad.",
   ],
   loop: true,
-  typeSpeed: 15,
+  typeSpeed: 25,
 });

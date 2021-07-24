@@ -1,73 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./res/styles/normalize.css">
-    <link rel="stylesheet" href="./res/styles/styles.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./res/styles/normalize.css" />
+    <link rel="stylesheet" href="./res/styles/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <title>Portafolio | Christian Ochoa</title>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!--Start: Navigation bar-->
 
     <nav id="navbar" class="nav-after-scroll">
-        <section class="navbar__logo">
-            <span class="navbar__logo__name">
-                Christian Ochoa
-            </span>
-        </section>
-        <section class="navbar__contents">
-            <ul class="navbar__contents__ul">
-                <li class="navbar__contents__li">
-                    <a href="#main-info" class="goto-contact" onclick="gotoContactSection(event)">
-                        Contacto
-                    </a>
-                </li>
-                <li class="navbar__contents__li">
-                    <a href="#about-me" class="goto-about" onclick="gotoAboutSection(event)">
-                        Sobre mi
-                    </a>
-                </li>
-                <li class="navbar__contents__li">
-                    <a href="#portfolio" class="goto-portfolio" onclick="gotoPortfolioSection(event)">
-                        Portafolio
-                    </a>
-                </li>
-            </ul>
-        </section>
+      <section class="navbar__logo">
+        <span class="navbar__logo__name"> Christian Ochoa </span>
+      </section>
+      <section class="navbar__contents">
+        <ul class="navbar__contents__ul">
+          <li class="navbar__contents__li">
+            <a
+              href="#main-info"
+              class="goto-contact"
+              onclick="gotoContactSection(event)"
+            >
+              Contacto
+            </a>
+          </li>
+          <li class="navbar__contents__li">
+            <a
+              href="#about-me"
+              class="goto-about"
+              onclick="gotoAboutSection(event)"
+            >
+              Sobre mi
+            </a>
+          </li>
+          <li class="navbar__contents__li">
+            <a
+              href="#portfolio"
+              class="goto-portfolio"
+              onclick="gotoPortfolioSection(event)"
+            >
+              Portafolio
+            </a>
+          </li>
+        </ul>
+      </section>
     </nav>
 
     <nav id="nav-mobile">
-        <div class="hamburguer">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <ul class="navlinks">
-            <li class="nav-link">
-                <a href="#main-info" class="nav-link__link" onclick="gotoContactSection(event)">
-                    Contacto
-                </a>
-            </li>
-            <li class="nav-link">
-                <a href="#about-me" onclick="gotoAboutSection(event)" class="nav-link__link">
-                    Sobre mi
-                </a>
-            </li>
-            <li class="nav-link">
-                <a href="#portfolio" class="nav-link__link" onclick="gotoPortfolioSection(event)">
-                    Portafolio
-                </a>
-            </li>
-        </ul>
+      <div class="hamburguer">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="navlinks">
+        <li class="nav-link">
+          <a
+            href="#main-info"
+            class="nav-link__link"
+            onclick="gotoContactSection(event)"
+          >
+            Contacto
+          </a>
+        </li>
+        <li class="nav-link">
+          <a
+            href="#about-me"
+            onclick="gotoAboutSection(event)"
+            class="nav-link__link"
+          >
+            Sobre mi
+          </a>
+        </li>
+        <li class="nav-link">
+          <a
+            href="#portfolio"
+            class="nav-link__link"
+            onclick="gotoPortfolioSection(event)"
+          >
+            Portafolio
+          </a>
+        </li>
+      </ul>
     </nav>
 
     <!--End: Navigation bar-->
@@ -75,45 +94,51 @@
     <!--Start: Main content-->
 
     <div class="particles-cont">
-        <div id="particles-js"></div>
-        <section id="main-info" class="content">
-            <div class="main-box">
-                <div class="content__media">
-                    <img class="content__media__image" src="https://avatars.githubusercontent.com/u/49920631?v=4"
-                        alt="My picture" />
-                    <div class="content__media__info">
-                        <p class="content__media__name">
-                            <span class="cap">C</span>hristian <span class="cap">O</span>choa
-                        </p>
-                        <p class="content__media__desc">Desarrollador web, Freelancer, Estudiante.</p>
-                    </div>
-                </div>
-                <div class="content__platforms">
-                    <div class="platform show-effect-gh">
-                        <a href="https://github.com/deadchri5" target="_blank">
-                            <img src="./res/images/icons/github-icon.svg" alt="Github">
-                        </a>
-                    </div>
-                    <div class="platform show-effect-link">
-                        <a href="https://linkedin.com/in/christianOchoa5" target="_blank">
-                            <img src="./res/images/icons/linkedin.svg" alt="Linkedin">
-                        </a>
-                    </div>
-                    <div class="platform show-effect-gmail">
-                        <a href="mailto:christianhdez022@gmail.com">
-                            <img src="./res/images/icons/gmail.svg" alt="Email">
-                        </a>
-                    </div>
-                </div>
+      <div id="particles-js"></div>
+      <section id="main-info" class="content">
+        <div class="main-box">
+          <div class="content__media">
+            <img
+              class="content__media__image"
+              src="https://avatars.githubusercontent.com/u/49920631?v=4"
+              alt="My picture"
+            />
+            <div class="content__media__info">
+              <p class="content__media__name">
+                <span class="cap">C</span>hristian
+                <span class="cap">O</span>choa
+              </p>
+              <p class="content__media__desc">
+                Desarrollador web, Freelancer, Estudiante.
+              </p>
             </div>
-        </section>
-        <div id="slide-down" class="slide-element">
-            <p>Desliza hacia abajo.</p>
-            <div class="arrowContainer">
-                <div class="line"></div>
-                <div class="line"></div>
+          </div>
+          <div class="content__platforms">
+            <div class="platform show-effect-gh">
+              <a href="https://github.com/deadchri5" target="_blank">
+                <img src="./res/images/icons/github-icon.svg" alt="Github" />
+              </a>
             </div>
+            <div class="platform show-effect-link">
+              <a href="https://linkedin.com/in/christianOchoa5" target="_blank">
+                <img src="./res/images/icons/linkedin.svg" alt="Linkedin" />
+              </a>
+            </div>
+            <div class="platform show-effect-gmail">
+              <a href="mailto:christianhdez022@gmail.com">
+                <img src="./res/images/icons/gmail.svg" alt="Email" />
+              </a>
+            </div>
+          </div>
         </div>
+      </section>
+      <div id="slide-down" class="slide-element">
+        <p>Desliza hacia abajo.</p>
+        <div class="arrowContainer">
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
     </div>
 
     <!--End: Main content-->
@@ -121,102 +146,136 @@
     <!--Start: about me section-->
 
     <div id="svg-decoration">
-        <div class="background">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#212121" fill-opacity="1"
-                    d="M0,160L34.3,160C68.6,160,137,160,206,181.3C274.3,203,343,245,411,234.7C480,224,549,160,617,128C685.7,96,754,96,823,90.7C891.4,85,960,75,1029,96C1097.1,117,1166,171,1234,186.7C1302.9,203,1371,181,1406,170.7L1440,160L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
-                </path>
-            </svg>
-        </div>
+      <div class="background">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#212121"
+            fill-opacity="1"
+            d="M0,160L34.3,160C68.6,160,137,160,206,181.3C274.3,203,343,245,411,234.7C480,224,549,160,617,128C685.7,96,754,96,823,90.7C891.4,85,960,75,1029,96C1097.1,117,1166,171,1234,186.7C1302.9,203,1371,181,1406,170.7L1440,160L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
     </div>
 
     <section id="about-me" class="about-me">
-        <div id="about-me-content" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" ata-aos-offset="200">
-            <h1>
-                Hola, soy Christian
-            </h1>
-            <div class="typed-box">
-                <span id="typed-strings">
-                </span>
-            </div>
-            <p class="about-me__paragraph">
-                <strong>Desarrollador web</strong> frontend, en mi carrera tocado un gran número de tecnologías de software, pero sin duda
-                lo que más me gusta es el desarrollo web frontend, tengo conocimientos en <span class="sp-react">ReactJS</span> y <span class="sp-angular">Angular</span>.
-            </p>
-            <p class="about-me__paragraph">
-                Cuento con nociones de backend ya que he construido y aplicado REST APIS con NodeJS o Laravel.
-            </p>
-            <i class="about-me__paragraph">
-                Gracias por ver mi portafolio.
-            </i>
+      <div
+        id="about-me-content"
+        data-aos="zoom-in"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        ata-aos-offset="200"
+      >
+        <h1>Christian Ochoa</h1>
+        <div class="typed-box">
+          <span id="typed-strings"> </span>
         </div>
+        <p class="about-me__paragraph">
+          <strong>Desarrollador web</strong>
+          frontend con conocimiento en JavaScript con sus librerías y frameworks
+          como ReactJS o Angular, además de conocimiento en HTML5 y CSS3.
+        </p>
+        <p class="about-me__paragraph">
+          Cuento con bases de backend, ya que he construido y aplicado REST APIS
+          con JavaScript (NodeJS) y PHP (Laravel). Además de tener experiencia
+          con bases de datos relacionales como MySQL.
+        </p>
+        <p class="about-me__paragraph">
+          Siempre dispuesto a aprender nuevas cosas para crecer como profesional
+          y como persona.
+        </p>
+        <p class="about-me__paragraph">
+          Si te interesa contactarme conmigo te invito a que me escribas por
+          Linkedin o vía email.
+        </p>
+        <i class="about-me__paragraph"> Gracias por ver mi portafolio. </i>
+      </div>
     </section>
 
     <!--End: about me section-->
 
     <section id="portfolio">
-        <h2 class="porftolio-title" data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1500">
-            Portafolio
-        </h2>
-        <p class="portfolio-desc" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="2000">
-            Mis trabajos (Proyectos personales y escolares).
-        </p>
-        <div id="card-container" class="portfolio-container">
-
-        </div>
+      <h2
+        class="porftolio-title"
+        data-aos="zoom-in-up"
+        data-aos-delay="50"
+        data-aos-duration="1500"
+      >
+        Portafolio
+      </h2>
+      <p
+        class="portfolio-desc"
+        data-aos="zoom-in"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+      >
+        Mis trabajos (Proyectos personales y escolares).
+      </p>
+      <div id="card-container" class="portfolio-container"></div>
     </section>
-
 
     <!--Start: footer section-->
 
     <footer class="footer">
-        <div class="box">
-            <div class="container">
-                <section class="col">
-                    <ul class="social">
-                        <span class="footer__subtitle">Contacto</span>
-                        <li>
-                            <a href="https://github.com/deadchri5" target="_blank">
-                                Github
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/in/christianOchoa5" target="_blank">
-                                Linkedin
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:christianhdez022@gmail.com">
-                                Email
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-            <div class="container">
-                <section class="col">
-                    <ul class="map-site">
-                        <span class="footer__subtitle">Mapa del sitio</span>
-                        <li>
-                            <a href="#about-me" class="goto-contact" onclick="gotoContactSection(event)">
-                                Contacto
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#main-info"class="goto-about" onclick="gotoAboutSection(event)">
-                                Sobre mi
-                            </a>
-                        </li>
-                        <li>
-                           <a href="#portfolio" class="goto-portfolio" onclick="gotoPortfolioSection(event)">
-                            Portafolio
-                        </a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
+      <div class="box">
+        <div class="container">
+          <section class="col">
+            <ul class="social">
+              <span class="footer__subtitle">Contacto</span>
+              <li>
+                <a href="https://github.com/deadchri5" target="_blank">
+                  Github
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/in/christianOchoa5"
+                  target="_blank"
+                >
+                  Linkedin
+                </a>
+              </li>
+              <li>
+                <a href="mailto:christianhdez022@gmail.com"> Email </a>
+              </li>
+            </ul>
+          </section>
         </div>
-        <p class="footer__txt">&copy; 2021 Christian Ochoa</p>
+        <div class="container">
+          <section class="col">
+            <ul class="map-site">
+              <span class="footer__subtitle">Mapa del sitio</span>
+              <li>
+                <a
+                  href="#about-me"
+                  class="goto-contact"
+                  onclick="gotoContactSection(event)"
+                >
+                  Contacto
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#main-info"
+                  class="goto-about"
+                  onclick="gotoAboutSection(event)"
+                >
+                  Sobre mi
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="goto-portfolio"
+                  onclick="gotoPortfolioSection(event)"
+                >
+                  Portafolio
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <p class="footer__txt">&copy; 2021 Christian Ochoa</p>
     </footer>
 
     <!--End: footer section-->
@@ -228,7 +287,7 @@
     <script src="./res/scripts/buttons.js"></script>
     <script src="./res/scripts/portfolio.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     <!--Particles Js library-->
     <script type="text/javascript" src="./particles/particles.js"></script>
@@ -236,6 +295,5 @@
     <!--TypedJs-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./res/scripts/typed.js"></script>
-</body>
-
+  </body>
 </html>
