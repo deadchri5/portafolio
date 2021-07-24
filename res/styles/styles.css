@@ -104,6 +104,8 @@
   height: 6rem;
   font-size: 1.2rem;
   background-color: transparent;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
 }
 
 .nav-after-scroll::before {
@@ -118,6 +120,8 @@
   height: 4rem;
   font-size: 1rem;
   background-color: #061f4ae8;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
 }
 
 /*Media queryes*/
@@ -537,6 +541,7 @@
 
 .slide-element p {
   margin: 2rem 0;
+  font-size: 1rem;
 }
 
 .slide-element .arrowContainer {
@@ -582,8 +587,8 @@
             transform: translateY(0);
   }
   to {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
   }
 }
 
@@ -593,8 +598,8 @@
             transform: translateY(0);
   }
   to {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
   }
 }
 

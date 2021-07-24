@@ -39,6 +39,7 @@
   height: 6rem;
   font-size: 1.2rem;
   background-color: transparent;
+  transition: 1s ease all;
   &::before {
     content: "";
     background-color: $color-secondary;
@@ -52,6 +53,7 @@
   height: 4rem;
   font-size: 1rem;
   background-color: #061f4ae8;
+  transition: 1s ease all;
 }
 
 /*Media queryes*/
