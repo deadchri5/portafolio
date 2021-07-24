@@ -4,7 +4,9 @@
 
 .slide-element {
   position: absolute;
+  z-index: 10;
   color: $white;
+  margin: 5rem;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -13,6 +15,43 @@
   text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
+  p{
+    margin: 2rem 0;
+  }
+  .arrowContainer{
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    justify-content: center;
+    width: 5rem;
+    margin: auto;
+    animation: slide-down 0.8s infinite;
+  }
+  .line{
+    background-color: $white;
+    height: 2px;
+    width: 2rem;
+    position: absolute;
+  }
+}
+
+.arrowContainer div:nth-child(1){
+  transform: rotate(45deg);
+  left: 13px;
+}
+
+.arrowContainer div:nth-child(2){
+  transform: rotate(-45deg);
+  right: 13px;
+}
+
+@keyframes slide-down{
+  from{
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-3px);
+  }
 }
 
 .content {
@@ -90,6 +129,8 @@
     }
   }
 }
+
+
 
 //Responsive
 
