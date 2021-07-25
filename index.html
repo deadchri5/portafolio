@@ -58,35 +58,38 @@
         <div class="line"></div>
         <div class="line"></div>
       </div>
-      <ul class="navlinks">
-        <li class="nav-link">
-          <a
-            href="#main-info"
-            class="nav-link__link"
-            onclick="gotoContactSection(event)"
-          >
-            Contacto
-          </a>
-        </li>
-        <li class="nav-link">
-          <a
-            href="#about-me"
-            onclick="gotoAboutSection(event)"
-            class="nav-link__link"
-          >
-            Sobre mi
-          </a>
-        </li>
-        <li class="nav-link">
-          <a
-            href="#portfolio"
-            class="nav-link__link"
-            onclick="gotoPortfolioSection(event)"
-          >
-            Portafolio
-          </a>
-        </li>
-      </ul>
+      <div class="mobile-menu">
+        <section class="mobile-menu__buttons">
+          <p class="mobile-menu__section-name">Secciones</p>
+          <div class="mobile-menu__box">
+            <a
+              href="#main-info"
+              class="mobile-menu__box__p"
+              onclick="gotoContactSection(event)"
+            >
+              Contacto
+            </a>
+          </div>
+          <div class="mobile-menu__box">
+            <a
+              href="#about-me"
+              onclick="gotoAboutSection(event)"
+              class="mobile-menu__box__p"
+            >
+              Sobre mí
+            </a>
+          </div>
+          <div class="mobile-menu__box">
+            <a
+              href="#portfolio"
+              onclick="gotoPortfolioSection(event)"
+              class="mobile-menu__box__p"
+            >
+              Portafolio
+            </a>
+          </div>
+        </section>
+      </div>
     </nav>
 
     <!--End: Navigation bar-->
