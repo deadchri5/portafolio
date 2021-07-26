@@ -30,9 +30,8 @@ function gotoPortfolioSection(event) {
   hamburguer.classList.toggle("close");
 }
 
-
 //Modal close button
 let btnCLoseModal = document.querySelector(".modal__content__button");
-btnCLoseModal.addEventListener('click', () => {
+btnCLoseModal.addEventListener("click", () => {
   document.getElementById("modal").remove();
-})
+});
