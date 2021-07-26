@@ -1,0 +1,60 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  &__content {
+    margin: auto;
+    width: 70%;
+    align-items: center;
+    background-color: $color-base;
+    padding: 4rem;
+    border-radius: 5px;
+    height: max-content;
+    position: relative;
+    &__button {
+      color: $color-base;
+      background-color: $color-secondary;
+      color: $white;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding: 0.5rem;
+      border: 1px solid $white;;
+      border-radius: 5px;
+      &:hover {
+          cursor: pointer;
+          color: $white;
+          background-color: $color-primary-darker;
+          transition: 0.5s ease all;
+      }
+    }
+    &__title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      text-align: center;
+      color: $white;
+    }
+    &__desc {
+      line-height: 1.7rem;
+      font-size: 1.3rem;
+      text-align: justify;
+      font-weight: 500;
+      color: $white;
+    }
+    &__video {
+      display: flex;
+      margin: auto;
+      width: 40rem;
+      height: 20rem;
+    }
+  }
+}
