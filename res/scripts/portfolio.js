@@ -84,7 +84,14 @@ const setWorkinCards = () => {
       '<p class="card__body__p">' +
       work.desc +
       "</p>" +
-      '<button onclick="modalShow(\' '+work.name+'\''+')"'+
+      "<button onclick=\"modalShow(' " +
+      work.name +
+      "|" +
+      work.desc +
+      "|" +
+      work.medialink +
+      "'" +
+      ')"' +
       '" target="_blank" class="card__body__btn card__body__btn__media">' +
       mediaButtonText +
       "</button>" +

@@ -38,14 +38,17 @@ function btnCLoseModal() {
 
 const modalContainer = document.getElementById("modal-container");
 
-function modalShow(object) {
+function modalShow(text) {
+  let arr = [];
+  arr = splitText(text);
+  console.log(arr);
   modalContainer.innerHTML +=
     '<div id="modal" class="modal">' +
     '<div class="modal__content">' +
     '<button class="modal__content__button" onclick="btnCLoseModal()">Cerrar</button>' +
-    '<p class="modal__content__title">Titulo de mi modal</p>' +
+    '<p class="modal__content__title">'+arr[0]+'</p>' +
     '<p class="modal__content__desc">' +
-    "some desc" +
+    '"'+arr[1]+'"' +
     "</p>" +
     "<iframe " +
     'src="https://www.youtube.com/embed/gctc2Un5iRY" ' +
@@ -53,4 +56,12 @@ function modalShow(object) {
     'class="modal__content__video"></iframe>' +
     "</div>" +
     "</div>";
+}
+
+function splitText(text) {
+  let arr = [];
+  for (let i=0; i<3; i++){
+    arr = text.split("|", i+1);
+  }
+  return arr;
 }
