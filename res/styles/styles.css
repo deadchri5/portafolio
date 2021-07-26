@@ -1093,9 +1093,11 @@
 
 .card__body__btn__media {
   background-color: #105bd8;
+  border-color: transparent;
 }
 
 .card__body__btn:hover {
+  cursor: pointer;
   -webkit-transition: ease 0.3s all;
   transition: ease 0.3s all;
   background-color: #061f4a;
@@ -1152,6 +1154,8 @@
   height: -moz-max-content;
   height: max-content;
   position: relative;
+  -webkit-animation: modalFadeIn 1s ease;
+          animation: modalFadeIn 1s ease;
 }
 
 .modal__content__button {
@@ -1198,6 +1202,28 @@
   margin: auto;
   width: 40rem;
   height: 20rem;
+}
+
+@-webkit-keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    top: -10px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    top: -10px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
 }
 
 @media screen and (max-width: 991px) {

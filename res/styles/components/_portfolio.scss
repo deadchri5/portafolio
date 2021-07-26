@@ -57,6 +57,7 @@
       margin: 3px 0;
       &__media {
         background-color: $color-primary;
+        border-color: transparent;
       }
       background-color: $color-primary-darker;
       text-decoration: none;
@@ -64,6 +65,7 @@
       color: $white;
       border-radius: 5px;
       &:hover {
+        cursor: pointer;
         transition: ease 0.3s all;
         background-color: $color-primary-darkest;
       }

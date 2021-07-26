@@ -84,11 +84,10 @@ const setWorkinCards = () => {
       '<p class="card__body__p">' +
       work.desc +
       "</p>" +
-      '<a href="' +
-      work.medialink +
+      '<button onclick="modalShow(\' '+work.name+'\''+')"'+
       '" target="_blank" class="card__body__btn card__body__btn__media">' +
       mediaButtonText +
-      "</a>" +
+      "</button>" +
       '<a href="' +
       work.repolink +
       '" target="_blank" class="card__body__btn">Ver repositorio</a>' +

@@ -30,8 +30,27 @@ function gotoPortfolioSection(event) {
   hamburguer.classList.toggle("close");
 }
 
-//Modal close button
-let btnCLoseModal = document.querySelector(".modal__content__button");
-btnCLoseModal.addEventListener("click", () => {
+//Modal buttons
+
+function btnCLoseModal() {
   document.getElementById("modal").remove();
-});
+};
+
+const modalContainer = document.getElementById("modal-container");
+
+function modalShow(object) {
+  modalContainer.innerHTML +=
+    '<div id="modal" class="modal">' +
+    '<div class="modal__content">' +
+    '<button class="modal__content__button" onclick="btnCLoseModal()">Cerrar</button>' +
+    '<p class="modal__content__title">Titulo de mi modal</p>' +
+    '<p class="modal__content__desc">' +
+    "some desc" +
+    "</p>" +
+    "<iframe " +
+    'src="https://www.youtube.com/embed/gctc2Un5iRY" ' +
+    'frameborder="0" ' +
+    'class="modal__content__video"></iframe>' +
+    "</div>" +
+    "</div>";
+}
