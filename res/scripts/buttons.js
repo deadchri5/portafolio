@@ -29,3 +29,10 @@ function gotoPortfolioSection(event) {
   mobileNav.classList.toggle("remove-opacity");
   hamburguer.classList.toggle("close");
 }
+
+
+//Modal close button
+let btnCLoseModal = document.querySelector(".modal__content__button");
+btnCLoseModal.addEventListener('click', () => {
+  document.getElementById("modal").remove();
+})
