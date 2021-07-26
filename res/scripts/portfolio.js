@@ -1,14 +1,10 @@
-//import works from "../myWorks.json";
-
 const works = [
   {
     image: "",
     name: "Página web de adopciones",
-    desc:
-      "Es una página web que tiene como finalidad ayudar a animales domésticos en " +
-      "situación de calle a encontrar un hogar. Tecnologías usadas: (Angular, Node JS, MongoDB).",
+    desc: "Es una página web que tiene como finalidad ayudar a animales domésticos en situación de calle a encontrar un hogar. Tecnologías usadas: (Angular, Node JS, MongoDB).",
     repolink: "https://github.com/deadchri5/adoptaMe/tree/frontend",
-    medialink: "www.google.com",
+    medialink: "https://www.youtube.com/embed/794Q71KVw1k",
     isDeployed: false,
   },
   {
@@ -103,19 +99,5 @@ const setWorkinCards = () => {
     i++;
   });
 };
-
-/*
-<div class="card">
-                <img src="./res/images/background.bmp" alt="" class="card__img">
-                <div class="card__body">
-                    <h5 class="card__body__title">Card title</h5>
-                    <p class="card__body__p">
-                        Here is some example text for the card component, because i don't have lorem ipsum
-                        auto fill tool.
-                    </p>
-                    <a href="#" class="card__body__btn">View work</a>
-                </div>
-            </div>
-*/
 
 setWorkinCards();

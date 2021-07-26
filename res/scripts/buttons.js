@@ -34,24 +34,27 @@ function gotoPortfolioSection(event) {
 
 function btnCLoseModal() {
   document.getElementById("modal").remove();
-};
+}
 
 const modalContainer = document.getElementById("modal-container");
 
 function modalShow(text) {
   let arr = [];
   arr = splitText(text);
-  console.log(arr);
   modalContainer.innerHTML +=
     '<div id="modal" class="modal">' +
     '<div class="modal__content">' +
     '<button class="modal__content__button" onclick="btnCLoseModal()">Cerrar</button>' +
-    '<p class="modal__content__title">'+arr[0]+'</p>' +
+    '<p class="modal__content__title">' +
+    arr[0] +
+    "</p>" +
     '<p class="modal__content__desc">' +
-    '"'+arr[1]+'"' +
+    arr[1] +
     "</p>" +
     "<iframe " +
-    'src="https://www.youtube.com/embed/gctc2Un5iRY" ' +
+    'src="' +
+    arr[2] +
+    '" ' +
     'frameborder="0" ' +
     'class="modal__content__video"></iframe>' +
     "</div>" +
@@ -60,8 +63,8 @@ function modalShow(text) {
 
 function splitText(text) {
   let arr = [];
-  for (let i=0; i<3; i++){
-    arr = text.split("|", i+1);
+  for (let i = 0; i < 3; i++) {
+    arr = text.split("|", i + 1);
   }
   return arr;
 }
